@@ -1,0 +1,79 @@
+# ─── Yocto Project ───────────────────────────────────────────────────────────────
+build/
+tmp/
+sstate-cache/
+downloads/
+cache/
+bitbake-cookerdaemon.log
+*.log
+
+# Conf files that might be generated or modified locally
+conf/.tmp*
+conf/*.bak
+
+# SD card and image outputs
+*.wic
+*.wic.gz
+*.img
+*.img.gz
+*.zip
+*.tar
+*.tar.gz
+*.xz
+
+# ─── Custom Drivers and Kernel Modules ───────────────────────────────────────────
+*.ko
+*.mod.*
+*.symvers
+*.order
+Module.symvers
+modules.order
+
+# ─── C/C++ Build Artifacts ───────────────────────────────────────────────────────
+*.o
+*.out
+*.elf
+*.a
+*.so
+*.so.*
+*.bin
+*.hex
+*.map
+*.d
+*.dSYM/
+*.exe
+
+# Typical binaries with no extension (common in embedded projects)
+a.out
+main
+test
+build/
+
+# ─── CMake / Makefile Outputs ────────────────────────────────────────────────────
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ─── Python Cache (if used in scripts) ───────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ─── Editor and IDE Files ────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ─── Docker (if used later) ──────────────────────────────────────────────────────
+docker-data/
+*.lock
+*.tar
+
+# ─── General ─────────────────────────────────────────────────────────────────────
+*.bak
+*.orig
+.DS_Store
+.env
+
